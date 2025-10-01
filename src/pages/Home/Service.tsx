@@ -67,9 +67,9 @@ export const Service: React.FC = () => {
             <div className="w-[60px] h-[60px] flex justify-center items-center mb-4 bg-[#E9F6ED] rounded-full">
             <span>  {service.icon}</span>
             </div>
-            <h4 className="text-[20px] font-semibold mb-2 text-[#000]">
+            <h5 className="text-[20px] font-semibold mb-2 text-[#000]">
               {service.title}
-            </h4>
+            </h5>
             <p className="text-[#3D3D3D] text-sm mb-4 font-normal">{service.description}</p>
             {service.list && (
               <ul className="text-[#3D3D3D] text-sm list-disc list-inside text-left mb-3">

@@ -112,8 +112,9 @@ export const Navbar: React.FC = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-[#FDFDFD] relative md:px-[80px] lg:px-[80px]">
       {/* Logo */}
+      <a href="/">
       <img src={nav_logo} alt="Baanza logo" className="h-8" />
-
+      </a>
       {/* Desktop links */}
       <div className="hidden md:flex">{renderNavLinks()}</div>
 

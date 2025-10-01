@@ -11,7 +11,7 @@ import footer_logo from "../assets/baanza_logo.png"; // replace with your logo p
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#111827] text-[#2E2E2E] px-6 md:px-16 py-12 mt-5">
+    <footer className="bg-[#111827] text-[#2E2E2E] px-6 md:px-16 py-12">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
         {/* Logo + Description */}
         <div className="col-span-1 md:col-span-2">

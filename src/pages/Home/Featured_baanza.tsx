@@ -61,9 +61,9 @@ export const Featured_baanza: React.FC = () => {
             </div>
             <div className="feat_body py-4 px-3.5">
               <div className="flex justify-between items-center">
-                <h4 className="text-lg md:text-xl text-[#101010] font-bold">
+                <h5 className="text-lg md:text-[24px] text-[#101010] font-bold">
                   {item.feat_title}
-                </h4>
+                </h5>
                 <div className="flex items-center gap-1">
                   <img
                     src={item.feat_rate_img}

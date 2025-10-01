@@ -44,9 +44,9 @@ export const Market_price: React.FC = () => {
                   <h6 className="text-[16px] lg:text-[20px] font-normal text-[#2E2E2E]">
                     {item.item_name}
                   </h6>
-                  <h4 className="text-[18px] lg:text-[20px] font-semibold text-[#22A747]">
+                  <h5 className="text-[18px] lg:text-[24px] font-semibold text-[#22A747]">
                     {item.weight}
-                  </h4>
+                  </h5>
                 </div>
                 <div className="flex gap-2 items-center">
                   <img src={item.icon} alt="trend" className="w-4 h-4" />

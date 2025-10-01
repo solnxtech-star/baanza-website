@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes as RouteRouter } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Home_page } from './pages/Home_page'
+import { About_page } from './pages/About_page'
 import { Not_found } from './pages/Not_found'
 import { Footer } from './components/Footer'
  
@@ -13,6 +14,7 @@ export const AppRouter : React.FC  = () => {
         <RouteRouter>
           <Route path='*' element={<Not_found  />} />
             <Route path='/' element={<Home_page  />} />
+            <Route path='/about' element={<About_page  />} />
         </RouteRouter>
         <Footer />
     </BrowserRouter>

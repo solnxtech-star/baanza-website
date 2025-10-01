@@ -10,7 +10,7 @@ export const Ready_to_start : React.FC = () => {
              <p className="max-w-3xl text-center text-[#616161] text-base md:text-[20px] mb-10 py-4 md:mb-[50PX] px-2 mx-auto">
       Join thousands of satisfied customers who are already earning money while helping the environment
       </p>
-    <div className='relative flex space-x-5 justify-center'>
+    <div className='relative flex flex-col lg:flex-row md:flex-row gap-2.5 space-x-5 justify-center'>
           <div className="flex items-center relative w-full sm:w-auto">
           <Recycle
             size={20}

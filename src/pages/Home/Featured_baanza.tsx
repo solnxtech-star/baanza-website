@@ -90,7 +90,7 @@ export const Featured_baanza: React.FC = () => {
       </div>
 
 
-         <div className='bg-[#E9F6ED] max-w-[912px] text-center p-5 md:h-[140px] mx-auto rounded-[12px] flex md:flex-row lg:flex-row flex-col'
+         <div className='bg-[#E9F6ED] max-w-[912px] text-center lg:text-left md:text-left p-5 md:h-[140px] mx-auto rounded-[12px] flex md:flex-row lg:flex-row flex-col'
         style={{
             boxShadow:' 0px 4px 20px 0px #0000001A'
         }}

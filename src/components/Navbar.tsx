@@ -2,6 +2,7 @@ import { useState } from "react";
 import nav_logo from "../assets/baanza_logo.png";
 import Button from "./Button";
 import { MenuIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 type NavbarLink = {
   id: number;
@@ -94,13 +95,13 @@ export const Navbar: React.FC = () => {
               } w-48 bg-white border border-gray-200 rounded-lg shadow-lg p-2`}
             >
               {item.children.map((child) => (
-                <a
+                <Link
                   key={child.id}
-                  href={child.url}
+                  to={child.url}
                   className="block px-4 py-2 font-dm text-sm text-gray-700 hover:bg-gray-100 rounded-md"
                 >
                   {child.label}
-                </a>
+                </Link>
               ))}
             </div>
           )}

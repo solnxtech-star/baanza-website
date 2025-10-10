@@ -1,0 +1,20 @@
+import React from "react";
+
+interface TextareaProps {
+  label: string;
+  placeholder: string;
+}
+
+export const Textarea: React.FC<TextareaProps> = ({ label, placeholder }) => {
+  return (
+    <div className="form_group mb-1">
+      <span className="block mb-1 font-bold text-[16px] pb-2 text-[#4D4D4D] text-left">
+        {label}
+      </span>
+      <textarea
+        placeholder={placeholder}
+        className="w-full border border-[#A4A6AC] rounded-[8px] text-[16px] text-[#A4A6AC] p-2.5 h-[160px] resize-none focus:outline-none"
+      />
+    </div>
+  );
+};

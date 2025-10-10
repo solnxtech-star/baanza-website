@@ -35,7 +35,7 @@ export const Value_section: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen flex justify-center items-center flex-col py-12 text-center md:px-[18px] lg:px-[18px] px-4">
+    <section className="min-h-screen flex justify-center items-center flex-col py-12 text-center md:px-[18px] lg:px-[90px] px-4">
       <h2 className="text-[#2E2E2E] text-center mb-4">
         Our <span className="text-[#22A747]">Values</span>
       </h2>
@@ -43,7 +43,7 @@ export const Value_section: React.FC = () => {
        The principles that guide everything we do at Baanza
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-10">
         {servicesData.map((service) => (
           <div
             key={service.id}

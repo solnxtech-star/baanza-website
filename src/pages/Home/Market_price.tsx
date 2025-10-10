@@ -19,13 +19,13 @@ export const Market_price: React.FC = () => {
   ];
 
   return (
-    <section className="py-8 bg-[#EDF2ED] px-6 lg:px-[83px]">
+    <section className="py-8 bg-[#EDF2ED] px-6 lg:px-[100px]">
       <div
-        className="bg-white lg:px-[32px] lg:py-[64px] rounded-[12px] p-4 grid lg:grid-cols-2 gap-8 items-center"
+        className="bg-white lg:px-[42px] lg:py-[64px]  rounded-[12px] p-4 flex gap-10 flex-col lg:flex-row items-center"
         style={{ boxShadow: "0px 4px 20px 0px #22A74726" }}
       >
         {/* Left Content */}
-        <div>
+        <div className="grid-cols-2">
           <h4 className="text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-[#2E2E2E] mb-2">
             Today’s <span className="text-[#22A747]">Market Prices</span>
           </h4>
@@ -41,10 +41,10 @@ export const Market_price: React.FC = () => {
                 className="bg-[#E7EAE8] w-full px-6 py-4 flex justify-between items-center rounded-lg"
               >
                 <div>
-                  <h6 className="text-[16px] lg:text-[20px] font-normal text-[#2E2E2E]">
+                  <h6 className="text-[16px] lg:text-[18px] font-normal text-[#2E2E2E]">
                     {item.item_name}
                   </h6>
-                  <h5 className="text-[18px] lg:text-[24px] font-semibold text-[#22A747]">
+                  <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#22A747]">
                     {item.weight}
                   </h5>
                 </div>

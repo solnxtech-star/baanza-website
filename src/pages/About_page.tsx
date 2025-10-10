@@ -1,6 +1,6 @@
 import { About_hero_section } from "./About/About_hero_section"
 import { Mission_section } from "./About/Mission_section"
-import { Join_recycle_section } from "./About/Join_recycle_section"
+import { Join_recycle_section } from "../components/Join_recycle_section"
 import { Our_team } from "./About/Our_team"
 import { Value_section } from "./About/Value_section"
 

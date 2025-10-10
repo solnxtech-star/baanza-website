@@ -21,22 +21,22 @@ const mission_list = [
 
 export const Mission_section: React.FC = () => {
   return (
-    <section className="bg-[#EDF2ED] flex flex-col justify-center items-center text-center px-4 py-10">
+    <section className="bg-[#EDF2ED] flex flex-col justify-center items-center text-center px-4 py-10 lg:px-6">
       <div
-        className="bg-white rounded-[12px] px-6 md:px-[90px] flex flex-col lg:flex-row justify-between items-center gap-10 w-full h-auto py-8"
+        className="bg-white rounded-[12px] px-6 md:px-[60px] flex flex-col lg:flex-row justify-between items-center gap-10 w-full h-auto py-8"
         style={{
           boxShadow: "0px 4px 20px 0px #22A74726",
         }}
       >
         {/* Mission Text + List */}
-        <div className="max-w-2xl text-left">
+        <div className="text-left">
           <h4 className="text-[#2E2E2E] text-xl md:text-2xl font-semibold">
             Our <span className="text-[#22A747]">Mission</span>
           </h4>
           <p className="text-[#7D7E7D] mt-4 text-base md:text-[20px] leading-7 font-normal">
-            To create a sustainable circular economy in Nigeria by connecting
-            waste generators with recycling professionals, making waste
-            profitable while reducing environmental impact.
+            To create a sustainable circular economy in Nigeria by <br /> connecting
+            waste generators with  recycling <br /> professionals, making waste
+            profitable while reducing <br /> environmental impact.
           </p>
 
           {/* ✅ Bullet List with Check icons */}

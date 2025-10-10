@@ -51,7 +51,7 @@ export const About_hero_section: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-    <section className="wrapper bg-[#EDF2ED] min-h-[291px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center items-center gap-4 sm:gap-6 xl:gap-10 w-full px-4 py-10">
+    <section className="wrapper bg-[#EDF2ED] min-h-[291px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-center items-center gap-4 sm:gap-6 xl:gap-10 w-full px-4 py-10 lg:px-[180px]">
   {wrapper.map((item) => (
     <div
       key={item.id}

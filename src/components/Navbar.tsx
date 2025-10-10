@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
       nav_text: "Pros",
       nav_url: "/pros",
       children: [
-        { id: 1, label: "Baanza Pro", url: "/pros/join" },
+        { id: 1, label: "Baanza Pro", url: "/baanza_pro" },
         { id: 2, label: "Sign up as a Pro", url: "/pros/dashboard" },
       ],
     },
@@ -51,9 +51,9 @@ export const Navbar: React.FC = () => {
       nav_text: "Support",
       nav_url: "/support",
       children: [
-        { id: 1, label: "Help", url: "/help" },
+        { id: 1, label: "Help", url: "/contact" },
         { id: 2, label: "Terms of Use", url: "/terms" },
-        { id: 3, label: "Privacy Policy", url: "/privacy" },
+        { id: 3, label: "Privacy Policy", url: "/privacy" }, 
       ],
     },
   ];

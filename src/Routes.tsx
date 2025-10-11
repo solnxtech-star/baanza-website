@@ -11,12 +11,16 @@ import { Find_vendors } from './pages/Find_vendors'
 import {Baanza_pro } from './pages/Baanza_pro'
 import { Contact } from './pages/Contact'
 import { Blog } from './pages/Blog'
+import { Signup } from './pages/Signup'
+import { Faq } from './pages/Faq'
+import ScrollToTopButton from './components/Scroll_top'
  
 
 export const AppRouter : React.FC  = () => {
   return (
     <BrowserRouter>
     <Navbar />
+    <ScrollToTopButton />
         <RouteRouter>
           <Route path='*' element={<Not_found  />} />
             <Route path='/' element={<Home_page  />} />
@@ -27,6 +31,8 @@ export const AppRouter : React.FC  = () => {
             <Route path='/baanza_pro' element={<Baanza_pro />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/blog' element={<Blog />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/faq' element={<Faq />} />
         </RouteRouter>
         <Footer />
     </BrowserRouter>

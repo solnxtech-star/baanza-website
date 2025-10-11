@@ -13,7 +13,7 @@ export const Vendor_hero_section:React.FC = () => {
           backgroundPosition: 'center',
         }}
       >
-        <h1 className="bg-gradient-to-r from-[#F5FFF8] to-[#CBF7D6] bg-clip-text text-transparent mb-4 text-3xl md:text-5xl font-bold text-center leading-snug">
+        <h1 className="bg-gradient-to-r from-[#F5FFF8] to-[#CBF7D6] bg-clip-text text-transparent mb-4 text-[12px] lg:text-5xl font-bold text-center lg:leading-snug">
          Find Baanza Pros
         </h1>
 

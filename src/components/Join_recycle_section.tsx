@@ -44,6 +44,19 @@ export const Join_recycle_section: React.FC = () => {
             className="border border-[#22A747] bg-[#EEFAF233] hover:bg-[#22A747] hover:text-white pl-10 pr-4 py-2 md:py-2.5 w-full md:w-[221px] text-[#22A747] font-bold transition"
           />
         </div>
+        {/* sell Recycle  */}
+         <div className="flex items-center justify-center relative w-full sm:w-auto">
+           <Recycle
+            size={20}
+            color="#FEFEFE"
+            className="absolute left-5 top-1/2 transform -translate-y-1/2"
+          />
+          <Button
+            type="button"
+            label="How to Recycle"
+            className="border border-[#22A747] bg-[#22A747] hover:bg-[#22A747] pl-10 pr-4 py-2 md:py-2.5 w-full sm:w-[221px] text-[#fff] font-bold transition"
+          />
+        </div>
       </div>
     </section>
   );

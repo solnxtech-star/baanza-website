@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import nav_logo from "../assets/baanza_logo.png";
 import Button from "./Button";
-import { MenuIcon, ArrowUp } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 type NavbarLink = {
@@ -65,33 +65,33 @@ export const Navbar: React.FC = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
-  const [showScroll, setShowScroll] = useState(false);
+  // const [showScroll, setShowScroll] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   // Show button when scrolled down
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowScroll(true);
-      } else {
-        setShowScroll(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 200) {
+  //       setShowScroll(true);
+  //     } else {
+  //       setShowScroll(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   // Scroll to top function
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   // Reusable nav render
   const renderNavLinks = (isMobile = false) => (
@@ -141,7 +141,7 @@ export const Navbar: React.FC = () => {
       <nav className="flex items-center justify-between px-8 py-4 bg-[#FDFDFD] relative md:px-[80px] lg:px-[80px] shadow-sm">
         {/* Logo */}
         <a href="/">
-          <img src={nav_logo} alt="Baanza logo" className="h-8" />
+          <img src={nav_logo} alt="Baanza logo" className="h-20 w-50" />
         </a>
 
         {/* Desktop links */}
@@ -190,20 +190,20 @@ export const Navbar: React.FC = () => {
       </nav>
 
       {/* Scroll to top button */}
-      {showScroll && (
+      {/* {showScroll && (
         <button
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 bg-[#22A747] text-white p-3 rounded-full shadow-lg hover:bg-[#1d8d3d] transition duration-300"
         >
           <ArrowUp size={22} />
         </button>
-      )}
-      <button
+      )} */}
+      {/* <button
   onClick={scrollToTop}
   className="fixed bottom-6 right-6 bg-[#22A747] text-white p-3 rounded-full shadow-lg hover:bg-[#1d8d3d] transition duration-300 z-[9999]"
 >
   <ArrowUp size={22} />
-</button>
+</button> */}
 
     </>
 

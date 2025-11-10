@@ -1,119 +1,31 @@
-import { ArrowUp, Recycle } from "lucide-react";
+// import { ArrowUp, Recycle } from "lucide-react";
 import React, { useState } from "react";
+import { material_data } from "./data/MaterialsData";
 
 export const Materials: React.FC = () => {
   const [currentTab, setCurrenttab] = useState("All");
-  const tab_menu: string[] = [
-    "All",
-    "Plastics",
-    "Iron & Steel",
-    "Glass",
-    "Brass",
-    "Copper",
-    "Aluminium",
-    "Battery",
-  ];
+const tab_menu: string[] = [
+  "All",
+  "Plastics",
+  "Iron & Steel",
+  "Glass",
+  "Brass",
+  "Copper",
+  "Aluminium",
+  "Battery",
+  "Electronics",
+  "Paper",
+  "Wood",
+  "Rubber",
+  "Organic",
+  "Textile",
+  "Composite",
+  "E-Waste",
+  "Miscellaneous",
+];
 
-   const material_data = [
-        {
-            id: 1,
-            title: 'Aluminium Can',
-            description: 'Beverage can made from aluminium, soft drink and othe beverages',
-            material_type: 'Aluminium',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
 
-        },
-        {
-            id: 2,
-            title: 'PET Bottles',
-            description: 'Clear plastic bottle used for water',
-            material_type: 'Plastic',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
-
-        },
-        {
-            id: 3,
-            title: 'Bottles',
-            description: 'Clear plastic bottle used for water',
-            material_type: 'Glass',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
-
-        },
-        {
-            id: 4,
-            title: 'Bottles',
-            description: 'Clear plastic bottle used for water',
-            material_type: 'Glass',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
-
-        },
-        {
-            id: 5,
-            title: 'Bottles',
-            description: 'Clear plastic bottle used for water',
-            material_type: 'Iron & Steel',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
-
-        },
-        {
-            id: 6,
-            title: 'Bottles',
-            description: 'Clear plastic bottle used for water',
-            material_type: 'Brass',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
-
-        },
-        {
-            id: 7,
-            title: 'Bottles',
-            description: 'Clear plastic bottle used for water',
-            material_type: 'Copper',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
-
-        },
-        {
-            id: 8,
-            title: 'Bottles',
-            description: 'Clear plastic bottle used for water',
-            material_type: 'Battery',
-            recycle_type: 'Recyclable',
-            price_span:  'N150',
-            kg_span: 'N300/kg',
-            icon: <ArrowUp />,
-            recyle_icon: <Recycle />
-
-        },
-       
-       
-    ];
+  
   const filteredMaterials =
     currentTab === "All"
       ? material_data

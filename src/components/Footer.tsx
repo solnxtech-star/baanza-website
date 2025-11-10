@@ -149,10 +149,10 @@ export const Footer: React.FC = () => {
               Download Our Apps
             </h5>
             <div className="flex space-x-3">
-              <button className="bg-[#FFFFFF1A] rounded-[8px] px-4 py-2 text-base text-[#FEFEFED9] hover:bg-[#22A747] transition cursor-pointer">
+              <button className="bg-[#FFFFFF1A] rounded-[8px] px-3 py-2 text-base text-[#FEFEFED9] hover:bg-[#22A747] transition cursor-pointer">
                 App Store
               </button>
-              <button className="bg-[#FFFFFF1A] rounded-[8px] px-2 py-2 text-base text-[#FEFEFED9] hover:bg-[#22A747] transition cursor-pointer">
+              <button className="bg-[#FFFFFF1A]  rounded-[8px] px-2 py-2 text-[14px] text-[#FEFEFED9] hover:bg-[#22A747] transition cursor-pointer">
                 Play Store
               </button>
             </div>

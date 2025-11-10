@@ -53,7 +53,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           type="button"
           label={buttonText || ''}
           className="bg-[#22A747] hover:bg-[#22A747] pl-10 pr-4 py-2 md:py-2.5 
-                     w-full sm:w-[338px] text-white font-bold transition relative"
+                     w-full sm:w-[288px] text-white font-bold transition relative"
         />
         <ArrowRight className="text-white w-[18px] h-[15px] absolute right-[24%] top-[34%]" />
          </span>

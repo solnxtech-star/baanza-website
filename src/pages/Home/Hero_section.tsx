@@ -7,7 +7,10 @@ import { Search, Recycle } from "lucide-react";
 const wrapper = [
   { id: 1, number: '100+', text: "Publications" },
   { id: 2, number: '15+', text: "Years of Experience" },
-  { id: 3, number: '50+', text: "Collaborations" }, // ⚡ fixed duplicate id
+  { id: 3, number: '50+', text: "Collaborations" }, 
+  { id: 4, number: '1000+', text: "Total waste recycle" }, 
+  { id: 5, number: '30+', text: "Registered number of baanza pro" }, 
+  { id: 6, number: '2M$', text: "Total cash paid out" }, 
 ]
 
 
@@ -66,7 +69,7 @@ export const Hero_section :React.FC = () => {
           />
         </div>
 
-        <div className="flex items-center justify-center relative w-full sm:w-auto">
+        <div className="flex items-center justify-center relative w-full sm:w-auto my-4">
           <img
             src={pro_icon}
             alt=""
@@ -78,6 +81,18 @@ export const Hero_section :React.FC = () => {
             className="border border-[#E9F6ED] bg-[#EEFAF233] hover:bg-[#22A747] pl-10 pr-4 py-2 md:py-2.5 w-full sm:w-[221px] text-white font-bold transition"
           />
         </div>
+        <div className="flex items-center justify-center relative w-full sm:w-auto">
+           <Recycle
+            size={20}
+            color="#FEFEFE"
+            className="absolute left-5 top-1/2 transform -translate-y-1/2"
+          />
+          <Button
+            type="button"
+            label="How to recycle"
+            className="border border-[#E9F6ED] bg-[#22A747] hover:bg-[#22A747] pl-10 pr-4 py-2 md:py-2.5 w-full sm:w-[221px] text-white font-bold transition"
+          />
+        </div>
       </div>
 
       {/* Stats Section */}
@@ -85,7 +100,7 @@ export const Hero_section :React.FC = () => {
         {wrapper.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col items-center border p-3 bg-[#FFFFFF29] rounded-[12px] w-full sm:w-[260px] h-[120px] border-[#FFFFFF1A] justify-center "
+            className="flex flex-col items-center border p-3 bg-[#FFFFFF29] rounded-[12px] w-full sm:w-[260px] h-[120px] border-[#FFFFFF1A] justify-center text-center "
             style={{ backdropFilter: 'blur(0px)' }}
           >
             <span className="text-3xl md:text-4xl font-bold text-white">{item.number}</span>

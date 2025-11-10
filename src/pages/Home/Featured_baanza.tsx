@@ -4,7 +4,7 @@ import feat_img2 from "../../assets/feat_img2.png";
 import feat_img3 from "../../assets/feat_img3.png";
 import star_icon from "../../assets/star_icon.svg";
 import Button from '../../components/Button'
-import { Recycle } from "lucide-react"; 
+// import { Recycle } from "lucide-react"; 
 
 
 export const Featured_baanza: React.FC = () => {
@@ -104,14 +104,9 @@ export const Featured_baanza: React.FC = () => {
         </div>
 
              <div className="flex items-center relative w-full sm:w-auto">
-          <Recycle
-            size={20}
-            color="#FEFEFE"
-            className="absolute left-5 top-1/2 transform -translate-y-1/2"
-          />
           <Button
             type="button"
-            label="Sell Recyclables"
+            label="Start now"
             className="bg-[#22A747] hover:bg-[#22A747] pl-10 pr-4 py-2 md:py-2.5 w-full sm:w-[221px] text-white font-bold transition"
           />
         </div>

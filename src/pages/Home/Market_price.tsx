@@ -12,7 +12,7 @@ type PriceItem = {
 
 export const Market_price: React.FC = () => {
   const price_items: PriceItem[] = [
-    { id: 1, item_name: "Bottles", weight: "N70 - N200/kg", percent_degree: "+15%", icon: degree_icon },
+    { id: 1, item_name: "Battery", weight: "N70 - N200/kg", percent_degree: "+15%", icon: degree_icon },
     { id: 2, item_name: "Plastics", weight: "N150 - N300/kg", percent_degree: "+10%", icon: degree_icon },
     { id: 3, item_name: "Metals", weight: "N500 - N800/kg", percent_degree: "+5%", icon: degree_icon },
     { id: 4, item_name: "Cartons", weight: "N40 - N100/kg", percent_degree: "+8%", icon: degree_icon },

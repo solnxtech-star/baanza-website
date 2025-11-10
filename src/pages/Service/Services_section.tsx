@@ -38,6 +38,39 @@ const servicesData = [
     shadow: '0px 4px 6px #00000026',
     bg_card: '#FFFFFF'
   },
+    {
+      id: 4,
+      icon: <img src={icon3} alt="icon" className="w-[35px] h-[22px]" />,
+      title: "Waste deposal",
+      description: "Learn how to properly sort, handle, and maximize value from your waste.",
+      list: ["MSW deposal", "Special Waste Deposal ", "Price insights"],
+      buttonText: "coming soon",
+       shadow: '0px 4px 6px #00000026',
+        bg_card: '#FFFFFF',
+      icon_bg_color: '#E9F6ED'
+    },
+    {
+      id: 5,
+      icon: <img src={icon3} alt="icon" className="w-[35px] h-[22px]" />,
+      title: "Sell Junks and Scarb",
+      description: "Learn how to properly sort, handle, and maximize value from your waste.",
+      list: ["Scrab Vehicle", "End of Life Appliances"],
+      buttonText: "Learn More",
+       shadow: '0px 4px 6px #00000026',
+        bg_card: '#FFFFFF',
+      icon_bg_color: '#E9F6ED'
+    },
+    {
+      id: 6,
+      icon: <img src={icon3} alt="icon" className="w-[35px] h-[22px]" />,
+      title: "Donate and Swap Item",
+      description: "Learn how to properly sort, handle, and maximize value from your waste.",
+      list: ["donate Item to Charity", "Swap Item"],
+      buttonText: "Learn More",
+       shadow: '0px 4px 6px #00000026',
+        bg_card: '#FFFFFF',
+      icon_bg_color: '#E9F6ED'
+    },
 ];
 
 export const Service_sec  = () => <ServicesSection services={servicesData}

@@ -1,7 +1,9 @@
 import React from "react";
-import team_img1 from "../../assets/team_img1.png";
-import team_img2 from "../../assets/team_img2.png";
-import team_img3 from "../../assets/team_img3.png";
+import team_img1 from "../../assets/team1.1.jpg";
+import team_img2 from "../../assets/Team.2.2.jpg";
+import team_img3 from "../../assets/Team3.3.jpg";
+import team_img4 from "../../assets/Team4.4.jpg";
+import team_img5 from "../../assets/melvin.jpg";
 import { Facebook, Instagram, Mail } from "lucide-react";
 
 export const Our_team: React.FC = () => {
@@ -20,8 +22,8 @@ export const Our_team: React.FC = () => {
     {
       id: 1,
       team_img: team_img1,
-      team_title: "Jerry Jakes",
-      team_text: "CEO, Director",
+      team_title: "AGBUGBA Onyinye",
+      team_text: "Founder / C.E.O",
       social_links: [
         { id: 1, icon: <Facebook className="w-5 h-5 text-[#101010]" /> },
         { id: 2, icon: <Instagram className="w-5 h-5 text-[#101010]" /> },
@@ -32,8 +34,8 @@ export const Our_team: React.FC = () => {
     {
       id: 2,
       team_img: team_img2,
-      team_title: "Jenny Hobb",
-      team_text: "COO, Director",
+      team_title: "GBUDJE Audrey",
+      team_text: "C.F.O",
       social_links: [
         { id: 1, icon: <Facebook className="w-5 h-5 text-[#101010]" /> },
         { id: 2, icon: <Instagram className="w-5 h-5 text-[#101010]" /> },
@@ -44,8 +46,32 @@ export const Our_team: React.FC = () => {
     {
       id: 3,
       team_img: team_img3,
-      team_title: "Jerry Jakes",
-      team_text: "Software Engineer",
+      team_title: "IDERIAH Soselye",
+      team_text: "Director, Strategy Lead",
+      social_links: [
+        { id: 1, icon: <Facebook className="w-5 h-5 text-[#101010]" /> },
+        { id: 2, icon: <Instagram className="w-5 h-5 text-[#101010]" /> },
+        { id: 3, icon: XIcon },
+        { id: 4, icon: <Mail className="w-5 h-5 text-[#101010]" /> },
+      ],
+    },
+    {
+      id: 4,
+      team_img: team_img4,
+      team_title: "ORIANWO Azubike",
+      team_text: "COO",
+      social_links: [
+        { id: 1, icon: <Facebook className="w-5 h-5 text-[#101010]" /> },
+        { id: 2, icon: <Instagram className="w-5 h-5 text-[#101010]" /> },
+        { id: 3, icon: XIcon },
+        { id: 4, icon: <Mail className="w-5 h-5 text-[#101010]" /> },
+      ],
+    },
+    {
+      id: 5,
+      team_img: team_img5,
+      team_title: "EDOJA Melvin",
+      team_text: "CTO",
       social_links: [
         { id: 1, icon: <Facebook className="w-5 h-5 text-[#101010]" /> },
         { id: 2, icon: <Instagram className="w-5 h-5 text-[#101010]" /> },
@@ -62,10 +88,10 @@ export const Our_team: React.FC = () => {
       </h2>
 
       <p className="max-w-3xl text-center text-[#616161] text-base md:text-[20px] mb-10 py-4 px-2 mx-auto">
-        The passionate people behind Banzaa
+       Our team has gained over 25 years combined experience in waste management, IT, project management, business management consulting, Human Resources, customer relation and business administration from reputable firms like SPDC, KPMG, SUNCOR ENERGY, TMCH and a host of others.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-1.5 justify-center items-center px-4 mb-[4em]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8   justify-center items-center px-4 mb-[4em]">
         {team_data.map((item) => (
           <div
             key={item.id}

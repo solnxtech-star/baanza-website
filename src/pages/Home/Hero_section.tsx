@@ -5,12 +5,11 @@ import Button from '../../components/Button'
 import { Search, Recycle } from "lucide-react"; 
 
 const wrapper = [
-  { id: 1, number: '100+', text: "Publications" },
-  { id: 2, number: '15+', text: "Years of Experience" },
-  { id: 3, number: '50+', text: "Collaborations" }, 
-  { id: 4, number: '1000+', text: "Total waste recycle" }, 
-  { id: 5, number: '30+', text: "Registered number of baanza pro" }, 
-  { id: 6, number: '2M$', text: "Total cash paid out" }, 
+  { id: 1, number: '35,685 kg', text: "Total Waste Recycled" },
+  { id: 2, number: '₦17,568,359.32 ', text: "Total Earnings Paid to Users" },
+  { id: 3, number: '529', text: "Active Baanza Collectors" },
+  { id: 3, number: '23,685 kg', text: "CO₂e Saved" },
+  { id: 3, number: '287', text: "tCO₂e Carbon Credits Created" },
 ]
 
 
@@ -32,7 +31,7 @@ export const Hero_section :React.FC = () => {
 
       {/* Hero Subtitle */}
       <p className="max-w-3xl text-center text-[#E9F6ED] text-base md:text-xl mb-6 px-2">
-        Connect with certified Baanza Pros to sell your recyclables and make a
+        Connect with certified Baanza Collectors to sell your recyclables and make a
         positive impact on the environment while earning money.
       </p>
 
@@ -43,7 +42,7 @@ export const Hero_section :React.FC = () => {
         </span>
         <input
           type="text"
-          placeholder="Find Recyclables, waste infos or Pros"
+          placeholder="Find Recyclables, waste infos or Collectors"
           className="flex-1 px-4 py-2 md:py-3 text-[#616161] text-sm md:text-base outline-none rounded-full"
         />
         <Button
@@ -77,7 +76,7 @@ export const Hero_section :React.FC = () => {
           />
           <Button
             type="button"
-            label="Find a Pro"
+            label="Find a Collector"
             className="border border-[#E9F6ED] bg-[#EEFAF233] hover:bg-[#22A747] pl-10 pr-4 py-2 md:py-2.5 w-full sm:w-[221px] text-white font-bold transition"
           />
         </div>
@@ -100,11 +99,11 @@ export const Hero_section :React.FC = () => {
         {wrapper.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col items-center border p-3 bg-[#FFFFFF29] rounded-[12px] w-full sm:w-[260px] h-[120px] border-[#FFFFFF1A] justify-center text-center "
+            className="flex flex-col items-center border p-3 bg-[#FFFFFF29] rounded-[12px] w-full sm:w-[280px] h-[120px] border-[#FFFFFF1A] justify-center text-center px-4 "
             style={{ backdropFilter: 'blur(0px)' }}
           >
-            <span className="text-3xl md:text-4xl font-bold text-white">{item.number}</span>
-            <span className="text-base md:text-lg text-white">{item.text}</span>
+            <span className="text-2xl md:text-3xl font-bold text-white">{item.number}</span>
+            <span className="text-base md:text-[16px] text-white">{item.text}</span>
           </div>
         ))}
       </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import nav_logo from "../assets/baanza_logo.png";
+import nav_logo from "../assets/baanzaLogo.png";
 import Button from "./Button";
 import { MenuIcon } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -24,12 +24,21 @@ export const Navbar: React.FC = () => {
       nav_url: "/",
       children: [
         { id: 1, label: "About Baanza", url: "/about" },
-        { id: 2, label: "A - Z of Waste", url: "/a-z_waste" },
         { id: 3, label: "News & Blogs", url: "/blog" },
       ],
     },
     {
       id: 2,
+      nav_text: "Recycle Guild",
+      nav_url: "/",
+      children: [ 
+        { id: 1, label: "A - Z of Waste", url: "/a-z_waste" },
+        { id: 3, label: "Recycle Trainning Videos", url: "/" },
+        { id: 3, label: "Baanza Comic", url: "/" },
+      ],
+    },
+    {
+      id: 3,
       nav_text: "Customers",
       children: [
         { id: 1, label: "Services on Baanza", url: "/services" },
@@ -38,8 +47,8 @@ export const Navbar: React.FC = () => {
       ],
     },
     {
-      id: 3,
-      nav_text: "Pros",
+      id: 4,
+      nav_text: "Collectors",
       nav_url: "/pros",
       children: [
         { id: 1, label: "Baanza Pro", url: "/baanza_pro" },
@@ -47,7 +56,7 @@ export const Navbar: React.FC = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       nav_text: "Support",
       nav_url: "/support",
       children: [
